@@ -1,0 +1,19 @@
+{
+  "name": "joseph-bien-kahn",
+  "version": "1.0.0",
+  "description": "The website for journalist extraordinaire, Joseph Bien-Kahn",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4",
+    "sass": "^1.25.0",
+    "tailwindcss": "^1.2.0"
+  },
+  "scripts": {
+    "build": "parcel build src/index.pug",
+    "serve": "parcel serve src/index.pug"
+  },
+  "author": "Aaron Strick",
+  "license": "ISC"
+}

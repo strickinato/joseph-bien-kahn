@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    link(rel="stylesheet", href="./style.scss")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+  body
+    main(class="container px-8 font-sans")
+      h1(class="text-2xl") Joseph Bien-Kahn
+      p
+        Joseph Bien-Kahn is a freelance journalist based in the Los Feliz neighborhood of Los Angeles. He's written profiles of ultrarunners, VW Bug drivers, Tijuanan baseball players, and reality stars. He covers film, tech, and people doing strange things in the desert.
+
+      ul
+        each val in links
+          li
+            span(class="font-bold")=val.publication
+            | :
+            |
+            a(class="text-pink-500 hover:font-bold underline" href=val.link)= val.headline
