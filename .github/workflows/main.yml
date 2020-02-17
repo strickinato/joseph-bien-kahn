@@ -24,7 +24,7 @@ jobs:
     steps:
     - name: Deploy it!
       run: >
-      now deploy 
-      --local-config=./now.json
-      --no-clipboard
-      --token ${ZEIT_TOKEN}
+        now deploy
+        --local-config=./now.json
+        --no-clipboard
+        --token ${ZEIT_TOKEN}
