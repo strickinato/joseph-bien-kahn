@@ -1,4 +1,4 @@
-name: CD
+name: Build & Deploy
 
 on:
   push:
@@ -10,9 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12
     - name: Build it
-      run: yarn build
-      
+      run: npm build
+
   deploy:
     runs-on: ubuntu-latest
     
