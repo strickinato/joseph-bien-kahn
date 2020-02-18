@@ -30,13 +30,13 @@ html(lang="en" class="h-full")
               | ):
               |
               div
-                a(class="text-pink-800 hover:text-green-700 underline" href=val.link target="_blank")= val.headline
+                a(class="text-pink-800 hover:text-green-700 underline" href=val.link target="_blank" rel="noopener")= val.headline
 
       p(class="pt-8") Hit me up on email at
         a(href="mailto:jbienkahn@gmail.com" class="text-pink-800")  jbienkahn@gmail.com
         |
         | or on twitter at
-        a(href="https://twitter.com/jbienkahn" class="text-pink-800")  @jbienkahn
+        a(href="https://twitter.com/jbienkahn" class="text-pink-800" rel="noopener" target="_blank")  @jbienkahn
         |.
 
       img(class="hidden sm:block sm:absolute max-w-lg right-lil bottom-lil z-0" src="images/joey.png", alt="A picture of the author himself, Joseph Bien-Kahn")
