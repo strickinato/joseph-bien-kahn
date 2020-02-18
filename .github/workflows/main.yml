@@ -23,5 +23,6 @@ jobs:
       run: >
         now deploy
         --local-config=./now.json
+        --confirm
         --no-clipboard
         --token ${ZEIT_TOKEN}
