@@ -11,6 +11,7 @@ jobs:
 
     env:
       ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
 
     steps:
     - uses: actions/checkout@v2
