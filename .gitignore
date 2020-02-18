@@ -4,3 +4,4 @@ node_modules
 parcel*
 yarn-*
 .now
+src/links.json

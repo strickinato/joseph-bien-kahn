@@ -3,16 +3,21 @@
   "version": "1.0.0",
   "description": "The website for journalist extraordinaire, Joseph Bien-Kahn",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "dateformat": "^3.0.3"
+  },
   "devDependencies": {
+    "googleapis": "^39.2.0",
     "parcel-bundler": "^1.12.4",
     "pug": "^2.0.4",
     "sass": "^1.25.0",
     "tailwindcss": "^1.2.0"
   },
   "scripts": {
-    "build": "parcel build src/index.pug --detailed-report",
-    "serve": "parcel serve src/index.pug"
+    "build": "npm run generateLinks && parcel build src/index.pug --detailed-report",
+    "serve": "parcel serve src/index.pug --no-cache",
+    "generateLinks": "node scripts/fetch.js"
+
   },
   "author": "Aaron Strick",
   "license": "ISC"
