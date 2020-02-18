@@ -1,6 +1,9 @@
+include ./google-analytics.pug
+
 doctype html
 html(lang="en" class="h-full")
   head
+    +analytics("UA-30582559-2")
     link(rel="stylesheet", href="./style.scss")
     meta(name="viewport", content="width=device-width, initial-scale=1")
     meta(name="description", content="Joseph Bien-Kahn, Los Angeles based journalist focused on film, tech, and people doing strange things in the desert")

@@ -1,0 +1,5 @@
+mixin analytics(id)
+    script.
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', '!{id}', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    script(src='https://www.google-analytics.com/analytics.js')
