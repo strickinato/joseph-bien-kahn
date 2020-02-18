@@ -5,3 +5,5 @@ parcel*
 yarn-*
 .now
 src/links.json
+.env
+.env.build

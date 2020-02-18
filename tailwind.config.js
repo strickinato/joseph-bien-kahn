@@ -272,6 +272,7 @@ module.exports = {
     }),
     inset: {
       '0': '0',
+      lil: '8px',
       auto: 'auto',
     },
     letterSpacing: {

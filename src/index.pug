@@ -1,23 +1,29 @@
 doctype html
-html
+html(lang="en" class="h-full")
   head
     link(rel="stylesheet", href="./style.scss")
     meta(name="viewport", content="width=device-width, initial-scale=1")
 
-  body
-    main(class="container px-8 font-sans")
-      h1(class="text-2xl") Joseph Bien-Kahn
-      div(class="max-w-md")
-        img(src="images/joey.jpg")
+  body(class="font-sans border-black border-solid border-8 h-full")
+    main(class="container p-8")
+      h1(class="text-3xl underline") Joseph Bien-Kahn
 
-      p(class="italic") Joseph Bien-Kahn is a freelance journalist based in the Los Feliz neighborhood of Los Angeles. He's written profiles of ultrarunners, VW Bug drivers, Tijuanan baseball players, and reality stars. He covers film, tech, and people doing strange things in the desert.
+      p(class="italic my-8 max-w-lg pl-8") Joseph Bien-Kahn is a freelance journalist based in the Los Feliz neighborhood of Los Angeles. He's written profiles of ultrarunners, VW Bug drivers, Tijuanan baseball players, and reality stars. He covers film, tech, and people doing strange things in the desert.
 
-      ul
-        each val in links
-          li
-            span(class="font-bold")=val.publication
-            |  (
-            =val.date
-            | ):
-            |
-            a(class="text-pink-500 hover:font-bold underline" href=val.link)= val.headline
+      div
+        h2(class="text-xl underline py-8") Selected Clippings
+        ul(class="pl-8")
+          each val in links
+            li(class="mb-4")
+              span(class="font-bold")=val.publication
+              |  (
+              =val.date
+              | ):
+              |
+              div
+                a(class="text-purple-500 hover:text-green-700 underline" href=val.link)= val.headline
+
+        img(class="max-w-lg bottom-8 right-lil bottom-lil absolute" src="images/joey.png", alt="A picture of the author himself, Joseph Bien-Kahn")
+
+    p(class="pl-8") Get in contact at
+      a(href="mailto:jbienkahn@gmail.com" class="text-purple-500")  jbienkahn@gmail.com
