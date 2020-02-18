@@ -1,5 +1,10 @@
 {
     "name": "joseph-bien-kahn-dot-com",
     "version": 2,
-    "alias": ["www.josephbienkahn.com", "josephbienkahn.com"]
+    "alias": ["www.josephbienkahn.com", "josephbienkahn.com"],
+    "build": {
+        "env": {
+            "GOOGLE_API_KEY": "@joseph-bien-kahn-google-api-key"
+        }
+    }
 }

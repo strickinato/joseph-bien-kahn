@@ -61,5 +61,11 @@ const main = async () => {
 
 
 main()
-    .then(a => console.log(a) )
-    .catch(err => console.log(err) )
+    .then(a => {
+        console.log(a)
+        process.exit(0)
+    })
+    .catch(err => {
+        console.log(err)
+        process.exit(1)
+    })
