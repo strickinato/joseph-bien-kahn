@@ -6,8 +6,11 @@ on:
     - master
 
 jobs:
-  build:
+  execute:
     runs-on: ubuntu-latest
+
+    env:
+      ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
 
     steps:
     - uses: actions/checkout@v2
@@ -16,17 +19,7 @@ jobs:
         node-version: 12
     - name: Build it
       run: npm run build
-
-  deploy:
-    runs-on: ubuntu-latest
-    
-    needs: build
-
-    env:
-      ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
-
-    steps:
-    - name: Deploy it!
+    - name: Deploy it
       run: >
         now deploy
         --local-config=./now.json
