@@ -17,6 +17,8 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 12
+    - name: Install Dependencies
+      run: npm install
     - name: Build it
       run: npm run build
     - name: Deploy it
