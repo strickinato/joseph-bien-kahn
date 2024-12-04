@@ -9,7 +9,7 @@
   "devDependencies": {
     "googleapis": "^39.2.0",
     "parcel-bundler": "^1.12.4",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "sass": "^1.25.0",
     "tailwindcss": "^1.2.0"
   },
